@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -8,6 +9,10 @@ import { NavbarFull } from "./components/NavbarFull";
 import { FooterFull } from "./components/FooterFull";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+// aqui vai o dendreço da minha api (mas ela não está funcionando)
+axios.defaults.baseURL = 'https://blue-c010-m04-fls-sneslib-api.herokuapp.com/';
+axios.defaults.headers.post["Content-Type"] = "application/json";
 
 ReactDOM.render(
   <React.StrictMode>

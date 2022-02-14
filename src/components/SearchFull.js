@@ -20,7 +20,7 @@ export const FormsFull = () => {
   return (
     <ContainerEdit>
       <Form className="d-flex">
-        <FormControl type="search" placeholder="Digite o número da mesa" className="me-2" aria-label="Search" />
+        <FormControl type="search" placeholder="Digite o nome do prato" className="me-2" aria-label="Search" />
         <button>
           <FaSearch />
         </button>

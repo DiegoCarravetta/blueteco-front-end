@@ -44,7 +44,7 @@ export const FooterFull = () => {
         <a href= "https://www.instagram.com/diego_carravetta/"><FaInstagramSquare /></a>
         <a href= "https://www.linkedin.com/in/diego-carravetta-4aa0a5215/"><FaLinkedinIn /></a>
       </SocialEdit>
-      <span>2022 - Diego Carravetta Projeto Blue Edtech </span>
+      <span>2022 - Diego Carravetta - Projeto Blue Edtech </span>
     </NavbarEdit>
   );
 };

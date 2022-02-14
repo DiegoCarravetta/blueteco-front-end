@@ -7,14 +7,23 @@ const CarouselImgEdit = styled.img`
   width: 100vw;
 `;
 
-const TituloEdit = styled.h3`
-  background-color: #00000080;
-  color: #fff;
-`;
+const CaptionEdit = styled(Carousel.Caption)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  h3 {
+    background-color: #000000d3;
+    color: #fff;
+    padding: 0.5rem;
+  }
 
-const SubtituloEdit = styled.p`
-  background-color: #00000080;
-  color: #fff;
+  p{
+    background-color: #000000d3;
+    color: #fff;
+    padding: 0.5rem;
+  }
 `;
 
 export const CarouselFull = (props) => {
@@ -23,10 +32,10 @@ export const CarouselFull = (props) => {
       {props.data.map((item) => (
         <Carousel.Item key={item.src}>
           <CarouselImgEdit src={item.src} />
-          <Carousel.Caption>
-            <TituloEdit>{item.titulo}</TituloEdit>
-            <SubtituloEdit>{item.subtitulo}</SubtituloEdit>
-          </Carousel.Caption>
+          <CaptionEdit>
+            <h3>{item.titulo}</h3>
+            <p>{item.subtitulo}</p>
+          </CaptionEdit>
         </Carousel.Item>
         ))}
     </Carousel>
