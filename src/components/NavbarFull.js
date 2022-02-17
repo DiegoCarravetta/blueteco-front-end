@@ -35,6 +35,7 @@ export const NavbarFull = () => {
         <Nav>
           <NavLinkEdit href="/cardapio">Cardápio</NavLinkEdit>
           <NavLinkEdit href="/reservas">Reservas</NavLinkEdit>
+          <NavLinkEdit href="/usuario">Usuário</NavLinkEdit>
           <ButtonEdit href="/login">Login</ButtonEdit>
         </Nav>
       </Container>
